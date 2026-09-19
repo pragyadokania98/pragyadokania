@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pragya Dokania — Fashion Designer & Product Developer</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      background: #f7f6f2;
+    }
+
+    header {
+      padding: 28px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #111;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+
+    .hero h1 {
+      font-size: clamp(55px, 9vw, 130px);
+      font-weight: 400;
+      line-height: 0.9;
+      letter-spacing: -0.05em;
+      max-width: 1100px;
+    }
+
+    .hero p {
+      margin-top: 35px;
+      font-size: 18px;
+      line-height: 1.5;
+      max-width: 500px;
+    }
+
+    .projects {
+      padding: 80px 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    .projects h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 45px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .project {
+      min-height: 350px;
+      background: #e7e5df;
+      display: flex;
+      align-items: flex-end;
+      padding: 25px;
+    }
+
+    .project h3 {
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    footer {
+      padding: 50px 40px;
+      border-top: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 40px 20px;
+      }
+
+      .projects {
+        padding: 60px 20px;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">PRAGYA DOKANIA</div>
+
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="mailto:your@email.com">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Fashion Designer<br>& Product Developer</h1>
+
+      <p>
+        A 360° approach to fashion, from creative concept
+        and product development to final presentation.
+      </p>
+    </section>
+
+    <section class="projects" id="work">
+
+      <h2>Selected Work</h2>
+
+      <div class="project-grid">
+
+        <div class="project">
+          <h3>Product Development</h3>
+        </div>
+
+        <div class="project">
+          <h3>Fashion Design</h3>
+        </div>
+
+        <div class="project">
+          <h3>Print & Motif</h3>
+        </div>
+
+        <div class="project">
+          <h3>Sage</h3>
+        </div>
+
+        <div class="project">
+          <h3>Photoshoots</h3>
+        </div>
+
+        <div class="project">
+          <h3>Selected Projects</h3>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="about">
+    <span>PRAGYA DOKANIA</span>
+    <span>Paris, France</span>
+  </footer>
+
+</body>
+</html>
